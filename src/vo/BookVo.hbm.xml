@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+ <class name="vo.BookVo" table="book_details">
+ 
+   <id name="id" type="int" column="id">
+    <generator class="increment"></generator>
+   </id>
+   
+   <property name="author">
+    <column name="Author"></column>
+   </property>
+   
+   <property name="publication">
+    <column name="Publication"></column>
+   </property>
+   
+   <property name="iSBN">
+    <column name="ISBN"></column>
+   </property>
+   
+   <property name="stream">
+    <column name="Stream"></column>
+   </property>
+   
+	<property name="title">
+    <column name="Title"></column>
+    </property>
+    
+   <property name="edition">
+    <column name="Edition"></column>
+    </property>
+   
+	<property name="price">
+    <column name="price"></column>
+    </property>
+
+ </class>
+
+</hibernate-mapping>
